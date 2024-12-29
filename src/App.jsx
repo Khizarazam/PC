@@ -18,7 +18,7 @@ const App = () => {
         <Navbar />
       </nav>
       <main
-        className="w-full font-mono mt-20" 
+        className="w-full relative font-mono mt-20" 
       >
         <Outlet />
       </main>

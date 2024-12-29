@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import gsap from "gsap";
@@ -53,13 +53,22 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-20 h-20" />
           <h1 className="text-2xl font-semibold">Prime-Chemicals</h1>
         </div>
+
         <div className=" lg:hidden cursor-pointer w-[50%] flex justify-end items-center mr-20 text-2xl font-bold">
           {toggle ? (
-            <h1 onClick={toggleHandler}>
+            <h1
+              onClick={() => {
+                toggleHandler();
+              }}
+            >
               <GiHamburgerMenu />
             </h1>
           ) : (
-            <h1 onClick={toggleHandler}>
+            <h1
+              onClick={() => {
+                toggleHandler();
+              }}
+            >
               <AiOutlineClose />
             </h1>
           )}
@@ -94,6 +103,25 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+
+      {!toggle ? (
+        <div
+          id="mobilediv"
+          className="right-0 z-[99] mr-10 rounded-xl border-[1px] border-black bg-black/10 h-[400px] lg:hidden absolute w-[30%]"
+        >
+          {links.map((link, index) => {
+            return (
+              <>
+                <div key={index} className=" pl-10 py-8 text-xl">
+                  <Link to={link}>{link}</Link>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      ) : null}
     </>
   );
 };
