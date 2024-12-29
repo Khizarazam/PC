@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const links = ["Home", "About Us", "Services", "Contact"];
+  const links = ["Home", "About", "Services", "Contact"];
   const tl = gsap.timeline();
 
   const [toggle, setToggle] = useState(true);
