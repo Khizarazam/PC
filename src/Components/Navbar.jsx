@@ -23,18 +23,18 @@ const Navbar = () => {
       duration: 3,
       delay: 1,
     });
-    gsap.from("#tagdiv", {
-      y: -20,
-      opacity: 0,
-      duration: 3,
-      delay: 1,
-    });
-    tl.from("#linkdiv", {
-      y: -20,
-      opacity: 0,
-      duration: 2,
-      stagger: 0.5,
-    });
+    // gsap.from("#tagdiv", {
+    //   y: -20,
+    //   opacity: 0,
+    //   duration: 3,
+    //   delay: 1,
+    // });
+    // tl.from("#linkdiv", {
+    //   y: -20,
+    //   opacity: 0,
+    //   duration: 2,
+    //   stagger: 0.5,
+    // });
     gsap.from("#btndiv", {
       x: 30,
       opacity: 0,
