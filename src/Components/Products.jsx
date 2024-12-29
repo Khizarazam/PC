@@ -24,7 +24,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="px-20 py-10 lg:flex w-full gap-5">
+      <div className="px-20 pt-32 lg:flex w-full gap-5">
         {card.map(({ title, description, btn, to }, index) => {
           return (
             <div

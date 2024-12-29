@@ -14,11 +14,11 @@ const App = () => {
 
   return (
     <>
-      <nav className="font-mono">
+      <nav className="font-serif">
         <Navbar />
       </nav>
       <main
-        className="w-full relative font-mono mt-20" 
+        className="w-full relative overflow-x-hidden font-serif" 
       >
         <Outlet />
       </main>

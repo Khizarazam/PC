@@ -16,7 +16,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path='Home'  element={<Home />} />
+      <Route path='/'  element={<Home />} />
       <Route path="About" element={<About />} />
       <Route path="Contact" element={<Contact />} />
       <Route path="Services" element={<Services />} />
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="Products/GeneralChemicals" element={<GeneralChemicals />} />
     </Route>
   ),
-  { basename: '/PC' }
+  { basename: '/PC/' }
 );
 
 createRoot(document.getElementById('root')).render(
