@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 const App = () => {
-
-//   const [theme, setTheme] = useState(false);
-//   const [repeat, setRepeat] = useState(0);
-
-//  const themeHandler =  () => {
-//     setTheme(!theme);
-//     setRepeat(!repeat);
-//   };
 
   return (
     <>
@@ -22,6 +15,7 @@ const App = () => {
       >
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

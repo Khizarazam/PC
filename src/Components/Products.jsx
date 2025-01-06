@@ -24,28 +24,8 @@ const Products = () => {
 
   return (
     <>
-      <div className="px-20 pt-32 lg:flex w-full gap-5">
-        {card.map(({ title, description, btn, to }, index) => {
-          return (
-            <div
-              key={index}
-              className="w-[300px] relative overflow-hidden  h-[300px] hover:scale-105 duration-300 p-5 border-black border-2 rounded-xl"
-              style={{
-                backgroundImage: `url(${backgroundImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <h2 className="text-2xl leading-tight font-bold">{title}</h2>
-              <p className="tracking-tighter leading-4 py-2">{description}</p>
-              <div className="w-full h-[50px] bottom-8 left-32 absolute"> 
-                <button className="px-5 hover:scale-105 duration-300 hover:bg-zinc-300 rounded-full my-3 py-3 border-2 border-black w-[150px] text-center">
-                  <Link to={to}>{btn}</Link>
-                </button>
-              </div>
-            </div>
-          );
-        })}
+      <div className="w-full pl-20 text-[#000288] mt-24">
+        <h1 className="text-4xl">Products</h1>
       </div>
     </>
   );

@@ -74,23 +74,6 @@ const Navbar = () => {
       opacity: 0,
       duration: 3,
     });
-
-    // gsap.utils.toArray("#tagdiv #linkdiv").forEach((link) => {
-    //   link.addEventListener("mouseenter", () => {
-    //     gsap.to(link, {
-    //       y: -3,
-    //       duration: 0.3,
-    //       ease: "power2.out",
-    //     });
-    //   });
-    //   link.addEventListener("mouseleave", () => {
-    //     gsap.to(link, {
-    //       y: 0,
-    //       duration: 0.3,
-    //       ease: "power2.in",
-    //     });
-    //   });
-    // });
   });
 
   return (
@@ -105,7 +88,7 @@ const Navbar = () => {
             alt="logo"
             className="w-20 h-20 hover:rotate-12 transition-all duration-300"
           />
-          <h1 className="text-2xl font-semibold bg-gradient-to-r from-[#1a2d42] to-[#aab7b7] bg-clip-text text-transparent">
+          <h1 className="text-2xl font-semibold">
             Prime-Chemicals
           </h1>
         </div>

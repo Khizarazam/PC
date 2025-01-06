@@ -11,6 +11,7 @@ import Products from './Components/Products.jsx';
 import Equipments from './Components/Equipments.jsx';
 import ElectroplatingChemicals from './Components/ElectroplatingChemicals.jsx';
 import GeneralChemicals from './Components/GeneralChemicals.jsx';
+import LabAnalysis from './Components/LabAnalysis.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="Equipments" element={<Equipments />} />
       <Route path="Products/ElectroplatingChemicals" element={<ElectroplatingChemicals />} />
       <Route path="Products/GeneralChemicals" element={<GeneralChemicals />} />
+      <Route path="LabAnalysis" element={<LabAnalysis />} />
     </Route>
   ),
   { basename: '/PC/' }
