@@ -12,7 +12,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   const mobileMenuRef = useRef(null);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setToggle(!toggle);
+  };
   const toggleHandler = () => {
+    setIsMenuOpen(!isMenuOpen);
     setToggle(!toggle);
     if (!toggle) {
       gsap.fromTo(
@@ -88,9 +95,7 @@ const Navbar = () => {
             alt="logo"
             className="w-20 h-20 hover:rotate-12 transition-all duration-300"
           />
-          <h1 className="text-2xl font-semibold">
-            Prime-Chemicals
-          </h1>
+          <h1 className="text-2xl font-semibold">Prime-Chemicals</h1>
         </div>
 
         <div className="lg:hidden cursor-pointer w-[20%] flex justify-end items-center text-2xl font-bold">
@@ -123,18 +128,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      {!toggle && (
+      {isMenuOpen && !toggle && (
         <div
           ref={mobileMenuRef}
           id="mobilediv"
-          className="right-3 mt-20 top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden fixed w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
+          className="right-3 mt-20 top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden absolute w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
         >
           {links.map((link, index) => (
             <div
               key={index}
               className="mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none"
             >
-               <Link to={link === "Home" ? "/" : link.toLowerCase()}>
+               <Link to={link === "Home" ? "/" : link.toLowerCase()}
+               onClick={handleLinkClick}
+               >
                 {link}
               </Link>
             </div>
