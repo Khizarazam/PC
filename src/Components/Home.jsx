@@ -159,7 +159,7 @@ const Home = () => {
           <h1 className="text-5xl text-black font-bold">Prime-Chemicals</h1>
           <h3 className="text-2xl text-black font-bold">A Sign Of Quality</h3>
           <p className=" pt-5 text-left">
-            Prime Chemicals could be a company involved in the manufacturing,
+           <b><i className="text-[#000288] text-xl">Prime Chemicals</i></b> could be a company involved in the manufacturing,
             distribution, and sales of various chemicals for different
             industries, including pharmaceuticals, agriculture, construction,
             food, and industrial applications.
@@ -175,16 +175,16 @@ const Home = () => {
             className="md:w-[30%] my-4 flex items-center gap-x-3"
           >
             <button className="px-6 text-nowrap py-2 rounded-full hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30">
-              <Link to="Products">Our Products</Link>
+              <Link to="Products" className="hover:text-[#000288] duration-300">Our Products</Link>
             </button>
             <button className="px-6 py-2 rounded-full hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30 ">
-              <Link to="Equipments">Equipments</Link>
+              <Link to="Equipments" className="hover:text-[#000288] duration-300">Equipments</Link>
             </button>
           </div>
         </div>
         <div
           id="div2"
-          className="lg:w-[50%] flex justify-center items-center w-[97%] relative h-[400px]"
+          className="lg:w-[50%] mix-blend-multiply flex justify-center items-center w-[97%] relative h-[400px]"
         >
           <img src={homeimage} alt="image" className="h-[80%] w-[80%]" />
         </div>
@@ -215,7 +215,7 @@ const Home = () => {
             <div
               key={id}
               style={{ backgroundImage: `url(${image || ""})` }}
-              className="group w-full bg-cover bg-center overflow-hidden flex-row items-center md:w-[80%] h-[280px] shadow-xl cursor-pointer hover:scale-105 duration-500 transition-all rounded-lg bg-[#efdfd1] relative"
+              className="group rounded-lg w-full bg-cover bg-center overflow-hidden flex-row items-center md:w-[80%] h-[280px] shadow-xl cursor-pointer hover:scale-105 duration-500 transition-all bg-[#efdfd1] relative"
             >
               <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <div className="h-[160px]">

@@ -42,6 +42,34 @@ const Products = () => {
       duration: 3,
       delay: 1,
     });
+    gsap.from("#div3", {
+      x: -100,
+      duration: 3,
+      delay: 1,
+      ease: "power2.out",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#div0",
+        start: "top 80%",
+        end: "bottom 50%",
+        scrub: 2,
+        toggleActions: "play none none reverse",
+      },
+    });
+    gsap.from("#div4", {
+      x: 100,
+      duration: 3,
+      delay: 1,
+      ease: "power2.out",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#div0",
+        start: "top 80%",
+        end: "bottom 50%",
+        scrub: 2,
+        toggleActions: "play none none reverse",
+      },
+    });
   });
 
   return (
@@ -97,11 +125,11 @@ const Products = () => {
             .
           </p>
         </div>
-        <div className=" w-full p-10  md:flex gap-5">
+        <div id="div0" className=" w-full p-10  md:flex gap-5">
           {card2.map(({ title, description, btn, to, id }) => {
             return (
               <>
-                <div id="div1" className="gap-5">
+                <div id="div3" className="gap-5">
                   <div className="md:w-[320px] w-full border-[1px] border-black hover:scale-105 duration-300 hover:shadow-xl relative p-3 h-[290px] rounded-xl">
                     <h1 className="text-[24px] text-nowrap text-[#000288]">
                       {title}
@@ -117,17 +145,32 @@ const Products = () => {
               </>
             );
           })}
-          <p id="div2" className="text-justify pt-10 md:pt-5">
-            <b><i className="text-[#000288]">General Chemicals</i></b> is a company that specializes in the manufacturing
-            and distribution of a wide range of industrial chemicals. They
-            provide <b><i className="text-[#000]">high-quality</i></b> chemicals for diverse industries, including
-            agriculture, food processing, water treatment, and pharmaceuticals.<br /><br />
-            The company is known for its commitment to <b><i className="text-[#000288]">sustainability</i></b> and
-            <b><i className="text-[#000288]">innovation</i></b>, offering products that support environmental
-            responsibility and operational efficiency. With a focus on customer
-            satisfaction, General Chemicals delivers customized solutions to meet
-            the unique needs of businesses, ensuring optimal performance and
-            safety in their operations.
+          <p id="div4" className="text-justify pt-10 md:pt-5">
+            <b>
+              <i className="text-[#000288]">General Chemicals</i>
+            </b>{" "}
+            is a company that specializes in the manufacturing and distribution
+            of a wide range of industrial chemicals. They provide{" "}
+            <b>
+              <i className="text-[#000]">high-quality</i>
+            </b>{" "}
+            chemicals for diverse industries, including agriculture, food
+            processing, water treatment, and pharmaceuticals.
+            <br />
+            <br />
+            The company is known for its commitment to{" "}
+            <b>
+              <i className="text-[#000288]">sustainability</i>
+            </b>{" "}
+            and
+            <b>
+              <i className="text-[#000288]"> innovation</i>
+            </b>
+            , offering products that support environmental responsibility and
+            operational efficiency. With a focus on customer satisfaction,
+            General Chemicals delivers customized solutions to meet the unique
+            needs of businesses, ensuring optimal performance and safety in
+            their operations.
           </p>
         </div>
       </div>

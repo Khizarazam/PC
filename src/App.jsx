@@ -11,7 +11,7 @@ const App = () => {
         <Navbar />
       </nav>
       <main
-        className="w-full relative overflow-x-hidden font-serif" 
+        className="w-full bg-zinc-100 relative overflow-x-hidden font-serif" 
       >
         <Outlet />
       </main>
