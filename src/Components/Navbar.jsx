@@ -132,7 +132,7 @@ const Navbar = () => {
         <div
           ref={mobileMenuRef}
           id="mobilediv"
-          className="right-3 mt-20 top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden absolute w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
+          className="right-3 mt-20 fixed top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
         >
           {links.map((link, index) => (
             <div
