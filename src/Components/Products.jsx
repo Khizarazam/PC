@@ -3,6 +3,9 @@ import backgroundImage from "../assets/bg-2.jpg";
 import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Products = () => {
   const card = [
