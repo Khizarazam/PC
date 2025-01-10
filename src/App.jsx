@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -7,19 +7,23 @@ const App = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
 
   return (
-    <>
-      <nav className="font-serif">
+    <div className="flex flex-col min-h-screen">
+      <nav className="font-serif sticky top-0 z-50 bg-white">
         <Navbar />
       </nav>
-      <main className="w-full bg-zinc-100 relative overflow-x-hidden font-serif">
-        <Outlet />
+      
+      <main className="flex-grow w-full bg-zinc-100 relative overflow-x-hidden font-serif">
+        <Suspense fallback={<div>Loading...</div>}>
+          <Outlet />
+        </Suspense>
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 };
 
