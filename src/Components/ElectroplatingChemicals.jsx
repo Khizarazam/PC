@@ -176,9 +176,11 @@ const ElectroplatingChemicals = () => {
               >
                 <h1 className="text-xl text-[#000288]">{title}</h1>
                 <p className="py-1 px-3 leading-none text-sm">{description}</p>
+                <a href={pdffile} download="pdf.pdf">
                   <button className="absolute bottom-1 hover:text-[#000288] border-[1px] border-black py-1 px-4 rounded-lg right-2">
                     {btn}
                   </button>
+                </a>
               </div>
             );
           })}
