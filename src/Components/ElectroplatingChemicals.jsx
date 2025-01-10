@@ -11,133 +11,133 @@ const ElectroplatingChemicals = () => {
     {
       title: "Nickle",
       description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
+        "Nickle is a fascinting silvery-white metal with atomic number 28 that combines strength, versatility , and remarkable properties.",
       btn: "Download now",
     },
     {
       title: "Brass",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Brass is a versatile metal alloy primarily composed of copper and zinc often with small amounts of other elements like lead, tin or iron.",
       btn: "Download now",
     },
     {
       title: "Acid Copper",
       description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
-      btn: "Download now",
-    },
-    {
-      title: "Cynide Copper",
-      description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
-      btn: "Download now",
-    },
-    {
-      title: "Tin",
-      description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
-      btn: "Download now",
-    },
-    {
-      title: "Acid Zinc",
-      description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
+        "Acid Copper refers to a type of copper plating process where copper is deposited onto a substrate(such as metal or plastic) using an acidic electrolyte solution.",
       btn: "Download now",
     },
     {
       title: "Cynide Zinc",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Cynide Zinc plating is valude for its ability to produce a smooth,uniform coating of zinc that offers exellent corrosion resistance particularly for industerial and automotive applications.",
+      btn: "Download now",
+    },
+    {
+      title: "Tin",
+      description:
+        "Tin is soft silvery-white metal with the chemical symbol Sn and atomic number 50 it is known for  its corrosion resistance ,low toxicity,and ability to from alloys with other metal such as bronze and pewter.",
+      btn: "Download now",
+    },
+    {
+      title: "Acid Zinc",
+      description:
+        "The Acid Zinc process is commonly used for coating parts to provide corrosion resistance, improve the appearnce, and increase durability.",
+      btn: "Download now",
+    },
+    {
+      title: "Cynide Copper",
+      description:
+        "The Cynide Copper process is valued for producing high-quality copper coating with a smooth uniform finish .",
       btn: "Download now",
     },
     {
       title: "Chrome",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Chrome plating is particularly popular for automotive parts,faucets, and appliances due to its shiney, mirror like finish.",
       btn: "Download now",
     },
     {
       title: "Silver",
       description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
+        "Silver is a chemical with the symbol Ag and atomic number 47 it is soft white lustrous metal kown for its high conductivity of heat and eletricity.",
       btn: "Download now",
     },
     {
       title: "Imitaion Gold",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Imitation Gold refers to materials or finishes that are designed to mimic the appearance of real gold but are made from less expensive or less valuable substances.",
       btn: "Download now",
     },
     {
       title: "24 Karat Gold",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
-      btn: "Download now",
+        "24 karat gold (24K gold) refers to gold that is pure, with no other metals or alloys mixed inThe term karat is used to measure the purity of gold, with 24 karats representing pure gold.",
+       btn: "Download now",
     },
     {
       title: "Chromatings",
       description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
+        "The chromating process creates a thin, protective oxide layer that helps to prevent corrosion, improve wear resistance, and enhance the appearance of the metal.",
       btn: "Download now",
     },
     {
       title: "Water Based Lacquer",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Water-based lacquer is a type of clear or tinted protective finish used to coat and protect surfaces, such as wood, metal, or plastic.",
       btn: "Download now",
     },
     {
       title: "Stainless Stell Finishing",
       description:
-        "Nickel is a fascinating silvery-white metal with atomic number 28 that combines strength, versatility, and remarkable properties.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "ElectroPhoretic Lacquer",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Aluminium Finishing",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication. .",
       btn: "Download now",
     },
     {
       title: "Dry Acid Salt",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Nickle Stripper",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Primer",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Rack Insulation Compound",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Super Protect Lacquer",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
     {
       title: "Trichrome 1706",
       description:
-        "Acid Zinc plating is an excellent electroplating process that delivers superior corrosion protection and a bright, attractive finish.",
+        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
       btn: "Download now",
     },
   ];
