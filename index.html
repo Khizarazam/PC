@@ -10,5 +10,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if (!location.pathname.startsWith("/")) {
+        const baseUrl = "/";
+        history.replaceState(null, null, baseUrl + location.pathname);
+      }
+    </script>
   </body>
 </html>
