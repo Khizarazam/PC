@@ -85,7 +85,7 @@ const Products = () => {
               <>
                 <div id="div1" className="gap-5">
                   <div className="md:w-[320px] w-full border-[1px] border-black hover:scale-105 duration-300 hover:shadow-xl relative p-3 h-[290px] rounded-xl">
-                    <h1 className="text-[24px] text-nowrap text-[#000288]">
+                    <h1 className="text-[24px] text-[#000288]">
                       {title}
                     </h1>
                     <p className="pt-3 leading-tight tracking-tight text-normal">
@@ -134,7 +134,7 @@ const Products = () => {
               <>
                 <div id="div3" className="gap-5">
                   <div className="md:w-[320px] w-full border-[1px] border-black hover:scale-105 duration-300 hover:shadow-xl relative p-3 h-[290px] rounded-xl">
-                    <h1 className="text-[24px] text-nowrap text-[#000288]">
+                    <h1 className="text-[24px] text-[#000288]">
                       {title}
                     </h1>
                     <p className="pt-3 leading-tight tracking-tight text-normal">

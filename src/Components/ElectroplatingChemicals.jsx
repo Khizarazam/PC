@@ -95,49 +95,49 @@ const ElectroplatingChemicals = () => {
     {
       title: "ElectroPhoretic Lacquer",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "Electrophoretic lacqure often referred to as electrophoretic coating or e-coating, is a type of coating process that uses electrical current to deposit a layer of paint or lacquer onto a substrate, typically metal.",
       btn: "Download now",
     },
     {
       title: "Aluminium Finishing",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication. .",
+        "Aluminum finishing refers to the various processes used to improve the appearance, durability, and performance of aluminum surfaces .",
       btn: "Download now",
     },
     {
       title: "Dry Acid Salt",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "Dry acid salt is a term typically used to describe a salt that is derived from an acid but is in its anhydrous (dry) form, meaning it does not contain water molecules in its structure.",
       btn: "Download now",
     },
     {
       title: "Nickle Stripper",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "A nickel stripper is a chemical solution or product used to remove nickel plating from metal surfaces. Nickel plating is often applied to parts for its corrosion resistance, aesthetic appearance, and durability.",
       btn: "Download now",
     },
     {
       title: "Primer",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "A primer is a preparatory coating applied to a surface before the application of a finish coat, such as paint or varnish.",
       btn: "Download now",
     },
     {
       title: "Rack Insulation Compound",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "Rack insulation compound is a specialized material used to insulate electrical racks, which are structures that house and organize electrical components, such as circuit boards, transformers, and other electronic equipment.",
       btn: "Download now",
     },
     {
       title: "Super Protect Lacquer",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "Super Protect Lacquer refers to a high-performance protective coating designed to provide an exceptionally durable, long-lasting layer of protection for various surfaces, typically in industrial and commercial applications.",
       btn: "Download now",
     },
     {
       title: "Trichrome 1706",
       description:
-        "Stainless steel finishing refers to the various processes applied to stainless steel surfaces to enhance their appearance, improve corrosion resistance, or prepare the surface for further treatments or fabrication.",
+        "Trichrome 1706 is a specific type of chromate conversion coating typically used for corrosion protection and surface treatment of metals, particularly aluminum and its alloys.",
       btn: "Download now",
     },
   ];
@@ -176,8 +176,8 @@ const ElectroplatingChemicals = () => {
               >
                 <h1 className="text-xl text-[#000288]">{title}</h1>
                 <p className="py-1 px-3 leading-none text-sm">{description}</p>
-                <a href={pdffile} download="pdf.pdf">
-                  <button className="absolute bottom-1 hover:text-[#000288] border-[1px] border-black py-1 px-4 rounded-lg right-2">
+                <a href={pdffile} download="NickleDataSheet.pdf">
+                  <button className="absolute bottom-1 bg-[#000288] text-white border-[1px] border-black py-1 px-4 rounded-lg right-2">
                     {btn}
                   </button>
                 </a>

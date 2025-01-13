@@ -174,11 +174,11 @@ const Home = () => {
             id="btndiv"
             className="md:w-[30%] my-4 flex items-center gap-x-3"
           >
-            <button className="px-6 text-nowrap py-2 rounded-full hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30">
-              <Link to="Products" className="hover:text-[#000288] duration-300">Our Products</Link>
+            <button className="px-6 text-nowrap hover:text-white py-2 rounded-full hover:bg-[#000288] hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30">
+              <Link to="Products" className=" duration-300">Our Products</Link>
             </button>
-            <button className="px-6 py-2 rounded-full hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30 ">
-              <Link to="Equipments" className="hover:text-[#000288] duration-300">Equipments</Link>
+            <button className="px-6 py-2 rounded-full hover:text-white hover:scale-105 hover:bg-[#000288] duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30 ">
+              <Link to="Equipments" className=" duration-300">Equipments</Link>
             </button>
           </div>
         </div>
