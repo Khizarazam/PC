@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
+
   const links = ["About", "Services", "Contact"];
+  
   return (
     <>
       <div className="w-full py-10 text-[#000288] text-center md:flex justify-center items-center bg-[#e3e0e0]">
@@ -36,9 +37,6 @@ const Footer = () => {
             </a>
             <a href="https://facebook.com" target="_blank">
               <FaFacebookF className=" cursor-pointer hover:text-[#4345ca]" />
-            </a>
-            <a href="" target="_blank">
-              <FaPhoneAlt className=" cursor-pointer hover:text-[#4345ca]" />
             </a>
           </div>
         </div>

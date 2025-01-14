@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import pdffile from '../assets/pdf.pdf'
+import pdffile from "../assets/pdf.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,7 +72,7 @@ const ElectroplatingChemicals = () => {
       title: "24 Karat Gold",
       description:
         "24 karat gold (24K gold) refers to gold that is pure, with no other metals or alloys mixed inThe term karat is used to measure the purity of gold, with 24 karats representing pure gold.",
-       btn: "Download now",
+      btn: "Download now",
     },
     {
       title: "Chromatings",
@@ -172,15 +172,21 @@ const ElectroplatingChemicals = () => {
             return (
               <div
                 key={index}
-                className="relative text-justify tracking-tight p-2 my-8 mx-3 border-[1px] border-black h-[130px] rounded-lg"
+                className=" text-justify tracking-tight p-2 my-8 mx-3 border-[1px] border-black h-[130px] rounded-lg"
               >
-                <h1 className="text-xl text-[#000288]">{title}</h1>
-                <p className="py-1 px-3 leading-none text-sm">{description}</p>
-                <a href={pdffile} download="NickleDataSheet.pdf">
-                  <button className="absolute bottom-1 bg-[#000288] text-white border-[1px] border-black py-1 px-4 rounded-lg right-2">
-                    {btn}
-                  </button>
-                </a>
+                <div className="w-full h-[60%]">
+                  <h1 className="text-xl text-[#000288]">{title}</h1>
+                  <p className="py-1 px-3 leading-none text-sm">
+                    {description}
+                  </p>
+                </div>
+                <div className="w-full h-[30%] mt-3">
+                  <a href={pdffile} download="NickleDataSheet.pdf">
+                    <button className="bg-[#000288] w-full hover:bg-[#4a4ce2] text-white border-[1px] border-black py-1 px-4 rounded-lg">
+                      {btn}
+                    </button>
+                  </a>
+                </div>
               </div>
             );
           })}

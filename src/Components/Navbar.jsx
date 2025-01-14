@@ -1,13 +1,21 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import { Link, useLocation, NavLink } from "react-router-dom";
+import pclogo from "../assets/pc-logo.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const links = ["Home", "About", "Services", "Contact"];
+  const location = useLocation();
+  const links = [
+    "Home",
+    "About",
+    "Services",
+    "Products",
+    "Equipments",
+    "Contact",
+  ];
   const tl = gsap.timeline();
   const [toggle, setToggle] = useState(true);
   const mobileMenuRef = useRef(null);
@@ -90,12 +98,13 @@ const Navbar = () => {
           id="logodiv"
           className="flex w-[80%] lg:w-[30%] justify-start items-center tracking-tighter"
         >
-          <img
-            src={logo}
-            alt="logo"
-            className="w-20 h-20 hover:rotate-12 transition-all duration-300"
-          />
-          <h1 className="text-2xl font-semibold">Prime-Chemicals</h1>
+          <Link to="/">
+            <img
+              src={pclogo}
+              alt="logo"
+              className="w-25 cursor-pointer h-16 py-2"
+            />
+          </Link>
         </div>
 
         <div className="lg:hidden cursor-pointer w-[20%] flex justify-end items-center text-2xl font-bold">
@@ -112,19 +121,24 @@ const Navbar = () => {
 
         <div
           id="tagdiv"
-          className="w-[40%] hidden gap-x-9 text-lg font-semibold lg:flex justify-center items-center"
+          className="w-[65%] hidden gap-x-9 text-lg font-semibold lg:flex justify-center items-center"
         >
-          {links.map((link) => (
-            <div
-              id="linkdiv"
-              key={link}
-              className="border-[1px] border-black py-1 hover:scale-105 px-4 rounded-full duration-300"
-            >
-              <Link to={link === "Home" ? "/" : link.toLowerCase()}>
-                {link}
-              </Link>
-            </div>
-          ))}
+          {links.map((link) => {
+            const path = link === "Home" ? "/" : `/${link.toLowerCase()}`;
+
+            return (
+              <div id="linkdiv" key={link} className="text-nowrap">
+                <NavLink
+                  to={path}
+                  className={({ isActive }) =>
+                    isActive ? "text-[#000288]" : ""
+                  }
+                >
+                  {link}
+                </NavLink>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -134,18 +148,23 @@ const Navbar = () => {
           id="mobilediv"
           className="right-3 mt-20 fixed top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
         >
-          {links.map((link, index) => (
-            <div
-              key={index}
-              className="mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none"
-            >
-               <Link to={link === "Home" ? "/" : link.toLowerCase()}
-               onClick={handleLinkClick}
-               >
-                {link}
-              </Link>
-            </div>
-          ))}
+          {links.map((link, index) => {
+            const path = link === "Home" ? "/" : `/${link.toLowerCase()}`;
+            const isActive = location.pathname === path;
+
+            return (
+              <div
+                key={index}
+                className={`mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none ${
+                  isActive ? "text-[#000288]" : ""
+                }`}
+              >
+                <Link to={path} onClick={handleLinkClick}>
+                  {link}
+                </Link>
+              </div>
+            );
+          })}
         </div>
       )}
     </>

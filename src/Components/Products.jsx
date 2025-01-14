@@ -79,21 +79,26 @@ const Products = () => {
     <>
       <div className="w-full mt-24">
         <h1 className="text-4xl text-[#000288] pl-20">Products</h1>
-        <div className="w-full p-10  md:flex gap-5">
+        <div className="w-full p-10   md:flex gap-5">
           {card.map(({ title, description, btn, to, id }) => {
             return (
               <>
                 <div id="div1" className="gap-5">
                   <div className="md:w-[320px] w-full border-[1px] border-black hover:scale-105 duration-300 hover:shadow-xl relative p-3 h-[290px] rounded-xl">
-                    <h1 className="text-[24px] text-[#000288]">
-                      {title}
-                    </h1>
-                    <p className="pt-3 leading-tight tracking-tight text-normal">
-                      {description}
-                    </p>
-                    <button className="border-[1px] hover:text-[#000288] border-black bottom-5 right-5 absolute rounded-full px-5 hover:scale-105 duration-300 hover:shadow-xl py-2">
-                      <Link to={to}>{btn}</Link>
-                    </button>
+                    <div className="w-full h-[60%]">
+                      <h1 className="text-[24px] text-[#000288]">{title}</h1>
+                      <p className="pt-3 leading-tight tracking-tight text-normal">
+                        {description}
+                      </p>
+                    </div>
+                    <div className="flex justify-center w-full text-white items-center h-[40%]">
+                      <Link
+                        to={to}
+                        className="bg-[#000288] text-center rounded-lg w-full hover:bg-[#4a4ce2] px-5 py-2"
+                      >
+                        {btn}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </>
@@ -134,15 +139,20 @@ const Products = () => {
               <>
                 <div id="div3" className="gap-5">
                   <div className="md:w-[320px] w-full border-[1px] border-black hover:scale-105 duration-300 hover:shadow-xl relative p-3 h-[290px] rounded-xl">
-                    <h1 className="text-[24px] text-[#000288]">
-                      {title}
-                    </h1>
-                    <p className="pt-3 leading-tight tracking-tight text-normal">
-                      {description}
-                    </p>
-                    <button className="border-[1px] hover:text-[#000288] border-black bottom-5 right-5 absolute rounded-full px-5 hover:scale-105 duration-300 hover:shadow-xl py-2">
-                      <Link to={to}>{btn}</Link>
-                    </button>
+                    <div className="w-full h-[60%]">
+                      <h1 className="text-[24px] text-[#000288]">{title}</h1>
+                      <p className="pt-3 leading-tight tracking-tight text-normal">
+                        {description}
+                      </p>
+                    </div>
+                    <div className="flex justify-center w-full text-white items-center h-[40%]">
+                      <Link
+                        to={to}
+                        className="bg-[#000288] text-center rounded-lg w-full hover:bg-[#4a4ce2] px-5 py-2"
+                      >
+                        {btn}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </>

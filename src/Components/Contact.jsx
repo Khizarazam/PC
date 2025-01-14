@@ -53,6 +53,7 @@ const Contact = () => {
                   className="w-[300px] outline-none p-2 rounded-lg border-b-[1px] border-t-[1px] h-[120px] border-black"
                 />
               </div>
+              <button className="bg-[#000288] text-white font-bold w-full py-2 rounded-lg hover:bg-[#474add]">Submit</button>
             </form>
           </div>
         </div>

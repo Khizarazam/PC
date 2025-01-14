@@ -4,8 +4,8 @@ import gsap from "gsap";
 import homeimage from "../assets/homeimg.png";
 import Electroplatingimg from "../assets/electroplatingimg.jpg";
 import Labimage from "../assets/Labimg.jpg";
-import Equipimage from '../assets/2ndimg.jpg';
-import video from '../assets/video.mov';
+import Equipimage from "../assets/2ndimg.jpg";
+import video from "../assets/video.mov";
 import img1 from "../assets/basf.jpg";
 import img2 from "../assets/hc-iso.jpeg";
 import img3 from "../assets/jas-naz.jpg";
@@ -156,13 +156,16 @@ const Home = () => {
     <>
       <div className=" py-20 lg:flex justify-center items-center w-full">
         <div id="div1" className="lg:w-[60%] mt-10 pl-5 md:pl-20">
-          <h1 className="text-5xl text-black font-bold">Prime-Chemicals</h1>
+          <h1 className="text-5xl text-black text-nowrap font-bold">Prime-Chemicals</h1>
           <h3 className="text-2xl text-black font-bold">A Sign Of Quality</h3>
           <p className=" pt-5 text-left">
-           <b><i className="text-[#000288] text-xl">Prime Chemicals</i></b> could be a company involved in the manufacturing,
-            distribution, and sales of various chemicals for different
-            industries, including pharmaceuticals, agriculture, construction,
-            food, and industrial applications.
+            <b>
+              <i className="text-[#000288] text-xl">Prime Chemicals</i>
+            </b>{" "}
+            could be a company involved in the manufacturing, distribution, and
+            sales of various chemicals for different industries, including
+            pharmaceuticals, agriculture, construction, food, and industrial
+            applications.
           </p>
           <br />
           <p className=" text-left">
@@ -174,12 +177,16 @@ const Home = () => {
             id="btndiv"
             className="md:w-[30%] my-4 flex items-center gap-x-3"
           >
-            <button className="px-6 text-nowrap hover:text-white py-2 rounded-full hover:bg-[#000288] hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30">
-              <Link to="Products" className=" duration-300">Our Products</Link>
-            </button>
-            <button className="px-6 py-2 rounded-full hover:text-white hover:scale-105 hover:bg-[#000288] duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30 ">
-              <Link to="Equipments" className=" duration-300">Equipments</Link>
-            </button>
+            <Link to="Products" className=" duration-300">
+              <button className="px-6 text-nowrap hover:text-white py-2 rounded-full hover:bg-[#000288] hover:scale-105 duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30">
+                Our Products
+              </button>
+            </Link>
+            <Link to="Equipments" className=" duration-300">
+              <button className="px-6 py-2 rounded-full hover:text-white hover:scale-105 hover:bg-[#000288] duration-300 ease-linear hover:shadow-2xl border-black border-[1px] bg-white/30 ">
+                Equipments
+              </button>
+            </Link>
           </div>
         </div>
         <div
@@ -210,7 +217,10 @@ const Home = () => {
         <div id="div5" className="w-full my-5 flex justify-center items-center">
           <h1 className="p-3 text-[#000288] text-4xl">OUR EXPERTISE</h1>
         </div>
-        <div id="div6" className="w-full place-items-center grid grid-cols-1 md:grid-cols-3 gap-4 p-5 my-14">
+        <div
+          id="div6"
+          className="w-full place-items-center grid grid-cols-1 md:grid-cols-3 gap-4 p-5 my-14"
+        >
           {Cards.map(({ id, name, desc, ankerLink, image }) => (
             <div
               key={id}
@@ -247,7 +257,10 @@ const Home = () => {
         </h1>
       </div>
 
-      <div id="div10" className="w-full mb-6 p-4 relative flex flex-col md:flex-row">
+      <div
+        id="div10"
+        className="w-full mb-6 p-4 relative flex flex-col md:flex-row"
+      >
         <div className="md:w-1/2 h-[600px] md:sticky md:top-0">
           <div id="div8" className="w-full h-full p-4">
             <video
@@ -257,7 +270,10 @@ const Home = () => {
             />
           </div>
         </div>
-        <div id="div9"  className="md:w-[50%] mt-4 md:mt-0 rounded-xl w-full p-4 h-[600px] flex flex-col justify-center items-center">
+        <div
+          id="div9"
+          className="md:w-[50%] mt-4 md:mt-0 rounded-xl w-full p-4 h-[600px] flex flex-col justify-center items-center"
+        >
           <h1 className="px-2 w-[180px] py-3 text-center my-3 hover:scale-105  transition-all shadow-lg bg-opacity-50 hover:bg-green-500 bg-green-500 rounded-full">
             We Are Certified
           </h1>

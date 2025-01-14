@@ -205,11 +205,19 @@ const GeneralChemicals = () => {
                 key={index}
                 className=" text-justify tracking-tight p-2 my-8 mx-3 border-[1px] border-black rounded-lg"
               >
-                <h1 className="text-xl text-[#000288]">{title}</h1>
-                <p className="py-3 px-3 leading-none text-sm">{description}</p>
-                <button className=" bg-[#000288] text-white border-[1px] border-black py-1 px-4 rounded-lg">
-                  {btn}
-                </button>
+                <div className="w-full h-[60%]">
+                  <h1 className="text-xl text-[#000288]">{title}</h1>
+                  <p className="py-1 px-3 leading-none text-sm">
+                    {description}
+                  </p>
+                </div>
+                <div className="w-full h-[30%] mt-3">
+                  <a>
+                    <button className="bg-[#000288] w-full hover:bg-[#4a4ce2] text-white border-[1px] border-black py-1 px-4 rounded-lg">
+                      {btn}
+                    </button>
+                  </a>
+                </div>
               </div>
             );
           })}
