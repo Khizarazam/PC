@@ -156,7 +156,7 @@ const Home = () => {
     <>
       <div className=" py-20 lg:flex justify-center items-center w-full">
         <div id="div1" className="lg:w-[60%] mt-10 pl-5 md:pl-20">
-          <h1 className="text-5xl text-black text-nowrap font-bold">Prime-Chemicals</h1>
+          <h1 className="text-5xl text-black font-bold">Prime-Chemicals</h1>
           <h3 className="text-2xl text-black font-bold">A Sign Of Quality</h3>
           <p className=" pt-5 text-left">
             <b>
