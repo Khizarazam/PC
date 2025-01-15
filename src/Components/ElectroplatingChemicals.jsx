@@ -172,7 +172,7 @@ const ElectroplatingChemicals = () => {
             return (
               <div
                 key={index}
-                className=" text-justify tracking-tight p-2 my-8 mx-3 border-[1px] border-black h-[130px] rounded-lg"
+                className=" text-justify tracking-tight p-2 my-8 mx-3 border-[1px] border-black rounded-lg"
               >
                 <div className="w-full h-[60%]">
                   <h1 className="text-xl text-[#000288]">{title}</h1>
