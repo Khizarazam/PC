@@ -153,17 +153,16 @@ const Navbar = () => {
             const isActive = location.pathname === path;
 
             return (
-              <Link
-                to={path}
+              <div
                 key={index}
                 className={`mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none ${
                   isActive ? "text-[#000288]" : ""
                 }`}
               >
-                <Link onClick={handleLinkClick}>
+                <Link to={path} onClick={handleLinkClick}>
                   {link}
                 </Link>
-              </Link>
+              </div>
             );
           })}
         </div>
