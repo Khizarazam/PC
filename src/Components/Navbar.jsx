@@ -148,23 +148,24 @@ const Navbar = () => {
           id="mobilediv"
           className="right-3 mt-20 fixed top-0 z-[100] rounded-xl border-[1px] border-black/20 bg-white/30 backdrop-blur-lg shadow-xl h-auto lg:hidden w-[70%] sm:w-[50%] md:w-[30%] overflow-hidden"
         >
-          {links.map((link, index) => {
-            const path = link === "Home" ? "/" : `/${link.toLowerCase()}`;
-            const isActive = location.pathname === path;
 
-            return (
-              <div
-                key={index}
-                className={`mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none ${
-                  isActive ? "text-[#000288]" : ""
-                }`}
-              >
-                <Link to={path} onClick={handleLinkClick}>
-                  {link}
-                </Link>
-              </div>
-            );
-          })}
+{links.map((link, index) => {
+  const path = link === "Home" ? "/" : `/${link.toLowerCase()}`;
+  const isActive = location.pathname === path;
+
+  return (
+    <Link 
+      to={path} 
+      key={index} 
+      onClick={handleLinkClick} 
+      className={`mobile-link block pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none ${
+        isActive ? "text-[#000288]" : ""
+      }`}
+    >
+      {link}
+    </Link>
+  );
+})}
         </div>
       )}
     </>
