@@ -154,12 +154,13 @@ const Navbar = () => {
 
             return (
               <Link
+                to={path}
                 key={index}
                 className={`mobile-link pl-10 py-6 text-xl hover:bg-gray-100 transition-all duration-300 border-b border-gray-100 last:border-none ${
                   isActive ? "text-[#000288]" : ""
                 }`}
               >
-                <Link to={path} onClick={handleLinkClick}>
+                <Link onClick={handleLinkClick}>
                   {link}
                 </Link>
               </Link>
